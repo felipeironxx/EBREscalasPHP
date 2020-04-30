@@ -4,9 +4,9 @@ require_once 'config/cfEscala.php';
 
 class dbConnection extends cfEscala {
 
-    private $user = "dbescala";
-    private $pass = "np98sc";
-    private $host = "189.14.192.113";
+    private $user = "root";
+    private $pass = "root";
+    private $host = "127.0.0.1";
     private $database = "dbescala";
 
     private function Connect() {

@@ -16,10 +16,10 @@
         <h1>PLANTONISTAS</h1>
         <table>
             <tr>
-                <td class="tabelaTD1"><img src="view/img/EBR/Data.png"></td>
-                <td class="tabelaTD1"><img src="view/img/EBR/analista.png"></td>
-                <td class="tabelaTD1"><img src="view/img/EBR/vix.png"></td>
-                <td class="tabelaTD1"><img src="view/img/EBR/acz.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/Data.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/analista.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/vix.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/acz.png"></td>
 
             </tr>
             {foreach from=$listaP item=row}
@@ -36,24 +36,22 @@
         <h1>FOLGA</h1>
 
 
-        <div id="tabela2">
-            <table>
+        <table>
+            <tr>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/Data.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/analista.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/vix.png"></td>
+
+            </tr>
+            {foreach from=$listaF item=row}
                 <tr>
-                    <td class="tabelaTD1"><img src="view/img/EBR/Data.png"></td>
-                    <td class="tabelaTD1"><img src="view/img/EBR/analista.png"></td>
-                    <td class="tabelaTD1"><img src="view/img/EBR/vix.png"></td>
-
+                    <td class="tabelaTD2">{$row.data}</td>
+                    <td class="tabelaTD2">{$row.analista}</td>
+                    <td class="tabelaTD2">{$row.tecnico}</td>
                 </tr>
-                {foreach from=$listaF item=row}
-                    <tr>
-                        <td class="tabelaTD2">{$row.data}</td>
-                        <td class="tabelaTD2">{$row.analista}</td>
-                        <td class="tabelaTD2">{$row.tecnico}</td>
-                    </tr>
-                {/foreach}
+            {/foreach}
 
-            </table>
-        </div>
+        </table>
         <!--<div id="ferias">
             <br>
             <center>

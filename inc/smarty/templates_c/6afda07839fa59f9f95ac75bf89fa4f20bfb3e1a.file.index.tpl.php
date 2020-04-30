@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2020-04-27 15:09:51
+<?php /* Smarty version Smarty-3.1.13, created on 2020-04-28 16:10:25
          compiled from "view/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:13550446515ea32eaa467be7-02900739%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6afda07839fa59f9f95ac75bf89fa4f20bfb3e1a' => 
     array (
       0 => 'view/index.tpl',
-      1 => 1588010987,
+      1 => 1588101023,
       2 => 'file',
     ),
   ),
@@ -44,10 +44,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <h1>PLANTONISTAS</h1>
         <table>
             <tr>
-                <td class="tabelaTD1"><img src="view/img/EBR/Data.png"></td>
-                <td class="tabelaTD1"><img src="view/img/EBR/analista.png"></td>
-                <td class="tabelaTD1"><img src="view/img/EBR/vix.png"></td>
-                <td class="tabelaTD1"><img src="view/img/EBR/acz.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/Data.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/analista.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/vix.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/acz.png"></td>
 
             </tr>
             <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;
@@ -72,31 +72,29 @@ $_smarty_tpl->tpl_vars['row']->_loop = true;
         <h1>FOLGA</h1>
 
 
-        <div id="tabela2">
-            <table>
-                <tr>
-                    <td class="tabelaTD1"><img src="view/img/EBR/Data.png"></td>
-                    <td class="tabelaTD1"><img src="view/img/EBR/analista.png"></td>
-                    <td class="tabelaTD1"><img src="view/img/EBR/vix.png"></td>
+        <table>
+            <tr>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/Data.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/analista.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/vix.png"></td>
 
-                </tr>
-                <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;
+            </tr>
+            <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['listaF']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['row']->key => $_smarty_tpl->tpl_vars['row']->value){
 $_smarty_tpl->tpl_vars['row']->_loop = true;
 ?>
-                    <tr>
-                        <td class="tabelaTD2"><?php echo $_smarty_tpl->tpl_vars['row']->value['data'];?>
+                <tr>
+                    <td class="tabelaTD2"><?php echo $_smarty_tpl->tpl_vars['row']->value['data'];?>
 </td>
-                        <td class="tabelaTD2"><?php echo $_smarty_tpl->tpl_vars['row']->value['analista'];?>
+                    <td class="tabelaTD2"><?php echo $_smarty_tpl->tpl_vars['row']->value['analista'];?>
 </td>
-                        <td class="tabelaTD2"><?php echo $_smarty_tpl->tpl_vars['row']->value['tecnico'];?>
+                    <td class="tabelaTD2"><?php echo $_smarty_tpl->tpl_vars['row']->value['tecnico'];?>
 </td>
-                    </tr>
-                <?php } ?>
+                </tr>
+            <?php } ?>
 
-            </table>
-        </div>
+        </table>
         <!--<div id="ferias">
             <br>
             <center>
