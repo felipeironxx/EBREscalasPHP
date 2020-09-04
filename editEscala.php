@@ -11,10 +11,6 @@ $f = new Folga();
 $c->setId($_GET['edit']);
 $c->load();
 
-$f->setId($_GET['edit']);
-$f->load();
-
-
 if (isset($_POST['data'], $_POST['analista'], $_POST['tecnicovix'], $_POST['tecnicoacz'])) {
     if ($_POST['data'] != '' and $_POST['analista'] != '' and $_POST['tecnicovix'] != '' and $_POST['tecnicoacz'] != '') {
 
@@ -38,12 +34,15 @@ $dados = array('data' => $c->getData(),
 $sm->assign('e', $dados);
 
 
-if (isset($_POST['data'], $_POST['analista'], $_POST['tecnico'])) {
-    if ($_POST['data'] != '') {
+$f->setId($_GET['edit']);
+$f->load();
 
-        $f->setData($_POST['data']);
-        $f->setAnalista($_POST['analista']);
-        $f->setTecnico($_POST['tecnico']);
+if (isset($_POST['dataF'], $_POST['analistaF'], $_POST['tecnicoF'])) {
+    if ($_POST['dataF'] != '' and $_POST['analistaF'] != '' and $_POST['tecnicoF']) {
+
+        $f->setData($_POST['dataF']);
+        $f->setAnalista($_POST['analistaF']);
+        $f->setTecnico($_POST['tecnicoF']);
         $f->update();
 
        $sm->assign("done", true);
