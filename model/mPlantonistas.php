@@ -9,6 +9,7 @@ class mPlantonistas extends dbConnection {
     private $analista;
     private $tecnicovix;
     private $tecnicoacz;
+    private $suporte;
 
     public function getId() {
         return $this->id;
@@ -48,6 +49,14 @@ class mPlantonistas extends dbConnection {
 
     public function setTecnicoacz($tecnicoacz) {
         $this->tecnicoacz = $tecnicoacz;
+    }
+
+    public function getSuporte() {
+        return $this->suporte;
+    }
+
+    public function setSuporte($suporte) {
+        $this->suporte = $suporte;
     }
 
 }

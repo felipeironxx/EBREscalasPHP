@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2020-09-04 17:08:10
+<?php /* Smarty version Smarty-3.1.13, created on 2022-02-14 16:18:39
          compiled from "view/editEscala.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:7839370045ea6f07456c7e1-73053595%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '7ed170b77249920261907d475a1df699ba792b11' => 
     array (
       0 => 'view/editEscala.tpl',
-      1 => 1599250066,
+      1 => 1644866312,
       2 => 'file',
     ),
   ),
@@ -29,6 +29,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <div id="formEditEscala">
 
+    <script>
+        function alerta() {
+            alert("Dados Salvos com sucesso!");
+        }
+    </script>
 
     <form name="editP" id="editP" method="post">
 
@@ -42,6 +47,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 "><br>
         Técnico ACZ:       <input type="text" name="tecnicoacz" id="tecnicoacz" size="40" value="<?php echo $_smarty_tpl->tpl_vars['e']->value['tecnicoacz'];?>
 ">
+        Suporte:           <input type="text" name="suporte" id="suporte" size="40" value="<?php echo $_smarty_tpl->tpl_vars['e']->value['suporte'];?>
+">
 
         <h3>Edição de Folga</h3>
 
@@ -52,7 +59,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         Técnico:           <input type="text" name="tecnicoF" id="tecnicoF" size="18" value="<?php echo $_smarty_tpl->tpl_vars['fo']->value['tecnico'];?>
 "><br>
 
-        <input type="submit" value="Salvar"/>
+        <input type="submit" value="Salvar" onclick="alerta()"/>
     </form>
 
 </div>

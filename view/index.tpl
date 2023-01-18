@@ -20,6 +20,7 @@
                 <td class="tabelaTD1"><img id="img1" src="view/img/EBR/analista.png"></td>
                 <td class="tabelaTD1"><img id="img1" src="view/img/EBR/vix.png"></td>
                 <td class="tabelaTD1"><img id="img1" src="view/img/EBR/acz.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/suporte.png"></td>
 
             </tr>
             {foreach from=$listaP item=row}
@@ -28,6 +29,7 @@
                     <td class="tabelaTD2">{$row.analista}</td>
                     <td class="tabelaTD2">{$row.tecnicovix}</td>
                     <td class="tabelaTD2">{$row.tecnicoacz}</td>
+                    <td class="tabelaTD2">{$row.suporte}</td>
                 </tr>
             {/foreach}
         </table>

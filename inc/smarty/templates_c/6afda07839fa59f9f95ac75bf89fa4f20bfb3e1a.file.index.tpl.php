@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.13, created on 2020-04-30 16:42:43
+<?php /* Smarty version Smarty-3.1.13, created on 2022-02-14 15:28:56
          compiled from "view/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:13550446515ea32eaa467be7-02900739%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6afda07839fa59f9f95ac75bf89fa4f20bfb3e1a' => 
     array (
       0 => 'view/index.tpl',
-      1 => 1588270935,
+      1 => 1644863335,
       2 => 'file',
     ),
   ),
@@ -48,6 +48,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <td class="tabelaTD1"><img id="img1" src="view/img/EBR/analista.png"></td>
                 <td class="tabelaTD1"><img id="img1" src="view/img/EBR/vix.png"></td>
                 <td class="tabelaTD1"><img id="img1" src="view/img/EBR/acz.png"></td>
+                <td class="tabelaTD1"><img id="img1" src="view/img/EBR/suporte.png"></td>
 
             </tr>
             <?php  $_smarty_tpl->tpl_vars['row'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['row']->_loop = false;
@@ -63,6 +64,8 @@ $_smarty_tpl->tpl_vars['row']->_loop = true;
                     <td class="tabelaTD2"><?php echo $_smarty_tpl->tpl_vars['row']->value['tecnicovix'];?>
 </td>
                     <td class="tabelaTD2"><?php echo $_smarty_tpl->tpl_vars['row']->value['tecnicoacz'];?>
+</td>
+                    <td class="tabelaTD2"><?php echo $_smarty_tpl->tpl_vars['row']->value['suporte'];?>
 </td>
                 </tr>
             <?php } ?>

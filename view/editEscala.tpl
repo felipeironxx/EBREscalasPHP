@@ -2,6 +2,11 @@
 
 <div id="formEditEscala">
 
+    <script>
+        function alerta() {
+            alert("Dados Salvos com sucesso!");
+        }
+    </script>
 
     <form name="editP" id="editP" method="post">
 
@@ -11,6 +16,7 @@
         Analista:          <input type="text" name="analista" id="analista" size="16" value="{$e.analista}">
         Técnico Vix:       <input type="text" name="tecnicovix" id="tecnicovix" size="18" value="{$e.tecnicovix}"><br>
         Técnico ACZ:       <input type="text" name="tecnicoacz" id="tecnicoacz" size="40" value="{$e.tecnicoacz}">
+        Suporte:           <input type="text" name="suporte" id="suporte" size="40" value="{$e.suporte}">
 
         <h3>Edição de Folga</h3>
 
@@ -18,7 +24,7 @@
         Analista:          <input type="text" name="analistaF" id="analistaF" size="16" value="{$fo.analista}">
         Técnico:           <input type="text" name="tecnicoF" id="tecnicoF" size="18" value="{$fo.tecnico}"><br>
 
-        <input type="submit" value="Salvar"/>
+        <input type="submit" value="Salvar" onclick="alerta()"/>
     </form>
 
 </div>

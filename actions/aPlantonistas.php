@@ -3,10 +3,10 @@ require_once ('model/mPlantonistas.php');
 
 class aPlantonistas extends mPlantonistas {
 
-    protected $sqlInsert = "insert into plantonistas (data, analista, tecnicovix, tecnicoacz) 
-                                                values('%s', '%s', '%s', '%s')";
+    protected $sqlInsert = "insert into plantonistas (data, analista, tecnicovix, tecnicoacz, suporte) 
+                                                values('%s', '%s', '%s', '%s', '%s')";
     
-    protected $sqlUpdate = "update plantonistas set data='%s', analista='%s', tecnicovix='%s', tecnicoacz='%s' 
+    protected $sqlUpdate = "update plantonistas set data='%s', analista='%s', tecnicovix='%s', tecnicoacz='%s', suporte='%s' 
                                            where id = '%s'";
     
     protected $sqlDelete = "delete from plantonistas where id = '%s' ";
@@ -19,7 +19,8 @@ class aPlantonistas extends mPlantonistas {
             $sql = sprintf($this->sqlInsert, $this->getData(),
                                              $this->getAnalista(),
                                              $this->getTecnicovix(),
-                                             $this->getTecnicoacz());
+                                             $this->getTecnicoacz(),
+                                             $this->getSuporte());
             return $this->RunQuery($sql);
         } catch (Exception $e) {
             echo "Caught exception:", $e->getMessage(), "\n";
@@ -32,6 +33,7 @@ class aPlantonistas extends mPlantonistas {
                                              $this->getAnalista(),
                                              $this->getTecnicovix(),
                                              $this->getTecnicoacz(),
+                                             $this->getSuporte(),
                                              $this->getId());
             return $this->RunQuery($sql);
         } catch (Exception $e) {
@@ -68,6 +70,7 @@ class aPlantonistas extends mPlantonistas {
             $this->setAnalista($rs[0]['analista']);
             $this->setTecnicovix($rs[0]['tecnicovix']);
             $this->setTecnicoacz($rs[0]['tecnicoacz']);
+            $this->setSuporte($rs[0]['suporte']);
            
             return $this;
         } catch (Exception $e) {
